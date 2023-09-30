@@ -1,12 +1,78 @@
 body {
-  background-image: url(images/pattern-background-desktop.svg);
+  background-image: url(../images/pattern-background-desktop.svg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100vw;
-  height: 100vh;
+  height: 50vh;
+  font-family: "Red Hat Display", sans-serif;
+  background-color: hsl(224, 100%, 94%);
 }
 
+.card {
+  border: 1px solid transparent;
+  border-radius: 10px;
+
+  max-width: 390px;
+  max-height: 1500px;
+  margin: 100px auto;
+  background: hsl(0, 0%, 100%);
+  margin-bottom: 50px;
+}
+.card-wrapper {
+  display: block;
+
+  border-radius: 10px;
+  background: white;
+  overflow: hidden;
+}
+.card-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+h2 {
+  text-align: center;
+  opacity: 0.8;
+}
+.card-info {
+  text-align: center;
+  font-weight: 400;
+  opacity: 0.7;
+  font-weight: 500;
+}
+button {
+  display: block;
+
+  margin: 10px auto;
+  padding: 12px 60px;
+  border: 1px solid transparent;
+  border-radius: 10px;
+  font-size: 15px;
+  color: white;
+  font-family: "Red Hat Display", sans-serif;
+}
+span {
+}
+.ending {
+  background: hsl(245, 75%, 52%);
+}
+.summary {
+  background: hsl(225, 100%, 98%);
+  color: black;
+  display: flex;
+  align-content: center;
+
+  flex-flow: row, wrap;
+
+  gap: 30px;
+  line-height: 30px;
+}
+.cancel {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
 .attribution {
   font-size: 11px;
   text-align: center;
