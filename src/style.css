@@ -8,9 +8,10 @@ body {
   font-family: "Red Hat Display", sans-serif;
   background-color: hsl(224, 100%, 94%);
 }
-
+.card-summary {
+  padding: 20px 20px;
+}
 .card {
-  border: 1px solid transparent;
   border-radius: 10px;
 
   max-width: 390px;
@@ -58,15 +59,36 @@ span {
   background: hsl(245, 75%, 52%);
 }
 .summary {
+  border: 1px solid transparent;
+  border-radius: 10px;
   background: hsl(225, 100%, 98%);
   color: black;
   display: flex;
-  align-content: center;
-
-  flex-flow: row, wrap;
-
-  gap: 30px;
-  line-height: 30px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+.order-summary {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.price,
+.annual {
+  display: block;
+}
+.price {
+  font-size: 14px;
+  color: gray;
+  margin-top: 5px;
+}
+.annual {
+  font-weight: bold;
+}
+.order-change {
+  text-decoration: underline;
+  color: hsl(245, 75%, 52%);
+  font-size: 13px;
 }
 .cancel {
   display: flex;
